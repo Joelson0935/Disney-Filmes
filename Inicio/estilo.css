@@ -1,0 +1,118 @@
+
+html, body {
+    background-color: rgba(255, 255, 255, 0.925);
+    width: 100%;
+    height: 100%;
+    
+}
+
+.cabeca {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.082);
+    overflow: auto;
+    
+}
+
+.cabeca img{
+width: 100px;
+height: 100px;
+margin-top: 40px;
+margin-left: 5%;
+}
+
+.lista {
+    float: right;
+    margin-top: 60px;
+    
+}
+
+.lista li {
+   list-style: none;
+   display: inline;
+   margin-right: 30px;
+   font-size: 200%;
+   font-weight: bold;
+   
+}
+
+.lista li a {
+    text-decoration: none;
+    color: black;
+}
+
+.lista li a:hover {
+color: crimson;
+}
+
+main {
+    width: 80%;
+    height: 650px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    overflow: auto;
+   
+}
+
+main .imagens {
+    width: 15.4%;
+    margin-right: 0.5%;
+    margin-top: 5px;
+    height: 50%;
+    margin-left: 0.5%;
+    cursor: pointer;
+}
+
+.modelo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.808);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.modelo #modal-1 {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15%;
+    height: 400px;
+    background-color: white;
+
+}
+
+#modal-1 img {
+ height: 80%;
+ width: 20%;
+ padding: 25px;
+ float: left;
+}
+
+#modal-1 p {
+    text-align: left;
+    margin: auto;
+    font-size: 25px;
+}
+
+#modal-1 #tipo {
+    padding-top: 25px;
+}
+
+footer {
+    margin-top: 25px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+footer p {
+    margin: auto;   
+}
+
+footer #linkedin {
+    padding-top: 40px;
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney_Filmes</title>
+    <script src="../Bootstrap/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="../imagens/disney-plus.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabeca">
+        <img src="../imagens/Walt-Disney-Logo-Fundo-Claro.png" alt="">
+        <ol class="lista">
+            <li><a href="http://127.0.0.1:5500/Inicio/index.html#">Inicio</a></li>
+            <li><a href="https://www.adorocinema.com/filmes/numero-cinemas/" target="_blank">Filmes</a></li>
+            <li><a href="https://seriesonlineweb.live/" target="_blank">Séries</a></li>
+            <li><a href="https://animesonline.cc/tv/" target="_blank">Animes</a></li>
+        </ol>
+    </header>
+
+    <main>
+        <img onclick="aparecaPiratas()" class="imagens" src="../imagens/piratas_do_caribe.jpg" alt="Piratas_do_Caribe">
+        <img onclick="aparecaMulan()" class="imagens" src="../imagens/Mulan.png" alt="Mulan">
+        <img onclick="aparecaRaya()" class="imagens" src="../imagens/Raya.png" alt="Raya">
+        <img onclick="aparecaEraDoGelo()" class="imagens" src="../imagens/A-Era-Do-Gelo.jpg" alt="Era-Do-Gelo">
+        <img onclick="aparecaJohnCarter()" class="imagens" src="../imagens/Jhon-Carther.jpg" alt="Jhon-Carther">
+        <img onclick="aparecaPrincipeDaPersia()" class="imagens" src="../imagens/Príncipe-Da-Pérsia.jpg" alt="Prícipe-Da-Pésia">
+        <img onclick="aparecaMalevola()" class="imagens" src="../imagens/Maleficent.jpg" alt="Malévola">
+        <img onclick="aparecaNarnia()" class="imagens" src="../imagens/Nárnia.jpg" alt="Nárnia">
+        <img onclick="aparecaReiLeao()" class="imagens" src="../imagens/Rei-Leao.jpg" alt="O-Rei-Leão">
+        <img onclick="aparecaFrozen()" class="imagens" src="../imagens/Frozen_2013.png" alt="Frozen">
+        <img onclick="aparecaTarzan()" class="imagens" src="../imagens/Tarzan.jpg" alt="Tarzan">
+        <img onclick="aparecaToyHistory()" class="imagens" src="../imagens/Toy_Story_1995.jpg" alt="Toy-History">
+    </main>
+
+    <div id="piratas-do-caribe" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaPiratas()">X</button>
+            <img src="../imagens/piratas_do_caribe.jpg" alt="Piratas_do_Caribe">
+            <p id="tipo"><strong>Tipo:</strong> Ação, Fantasia</p>
+            <p><strong>Lançamento:</strong> 29/08/2003</p>
+            <p><strong>Direção:</strong> Gore Verbinski</p>
+            <p><strong>Roteiro:</strong> Jay Wolpert, Stuart Beattie</p>
+            <p><strong>Elenco:</strong> Johnny Depp, Geoffrey Rush, Keira Knightley</p>
+            <p><strong>Título original</strong> Pirates of the Caribbean: The Curse of the Black Pearl</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="mulan" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaMulan()">X</button>
+            <img src="../imagens/Mulan.png" alt="Mulan">
+            <p id="tipo"><strong>Tipo:</strong> Aventura, Família, Fantasia</p>
+            <p><strong>Lançamento:</strong> 04/09/2020</p>
+            <p><strong>Direção:</strong> Niki Caro</p>
+            <p><strong>Roteiro:</strong> Lauren Hynek, Rick Jaffa</p>
+            <p><strong>Elenco:</strong> Yifei Liu, Donnie Yen, Gong Li</p>
+            <p><strong>Título original</strong> Mulan</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="raya" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaRaya()">X</button>
+            <img src="../imagens/Raya.png" alt="Raya">
+            <p id="tipo"><strong>Tipo:</strong> Ação, Fantasia</p>
+            <p><strong>Lançamento:</strong> 04/03/2021</p>
+            <p><strong>Direção:</strong>  Don Hall, Carlos Lopez Estrada, Paul Briggs</p>
+            <p><strong>Roteiro:</strong>  Adele Lim, Qui Nguyen</p>
+            <p><strong>Elenco:</strong> Kelly Marie Tran, Awkwafina, Gemma Chan</p>
+            <p><strong>Título original</strong> Raya and The Last Dragon</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="eraDoGelo" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaEraDoGelo()">X</button>
+            <img src="../imagens/A-Era-Do-Gelo.jpg" alt="Era-Do-Gelo">
+            <p id="tipo"><strong>Tipo:</strong> Comédia, Animação</p>
+            <p><strong>Lançamento:</strong> 22/03/2002</p>
+            <p><strong>Direção:</strong> Chris Wedge, Carlos Saldanha</p>
+            <p><strong>Roteiro:</strong> Mike Thurmeier, Galen T. Chu</p>
+            <p><strong>Elenco:</strong>: Diogo Vilela, Tadeu Mello, Márcio Garcia</p>
+            <p><strong>Título original</strong> Ice Age</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="johnCarter" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaJohnCarter()">X</button>
+            <img src="../imagens/Jhon-Carther.jpg" alt="Jhon-Carter">
+            <p id="tipo"><strong>Tipo:</strong> Ficção científica, Aventura, Ação</p>
+            <p><strong>Lançamento:</strong> 09/03/2012</p>
+            <p><strong>Direção:</strong> Andrew Stanton</p>
+            <p><strong>Roteiro:</strong> Andrew Stanton, Mark Andrews</p>
+            <p><strong>Elenco:</strong> Taylor Kitsch, Lynn Collins, Samantha Morton</p>
+            <p><strong>Título original</strong> John Carter</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="persia" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaPrincipeDaPersia()">X</button>
+            <img src="../imagens/Príncipe-Da-Pérsia.jpg" alt="Prícipe-Da-Pésia">
+            <p id="tipo"><strong>Tipo:</strong> Aventura, Ação</p>
+            <p><strong>Lançamento:</strong> 03/06/2010</p>
+            <p><strong>Direção:</strong> Mike Newell</p>
+            <p><strong>Roteiro:</strong> Doug Miro, Carlo Bernard</p>
+            <p><strong>Elenco:</strong> Jake Gyllenhaal, Gemma Arterton, Ben Kingsley</p>
+            <p><strong>Título original</strong> Prince of Persia: The Sands of Time</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="malevola" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaMalevola()">X</button>
+            <img src="../imagens/Maleficent.jpg" alt="Malévola">
+            <p id="tipo"><strong>Tipo:</strong> Fantasia, Aventura</p>
+            <p><strong>Lançamento:</strong> 29/05/2014</p>
+            <p><strong>Direção:</strong> Robert Stromberg</p>
+            <p><strong>Roteiro:</strong> Linda Woolverton, John Lee Hancock</p>
+            <p><strong>Elenco:</strong> Angelina Jolie, Elle Fanning, Sharlto Copley</p>
+            <p><strong>Título original</strong> Maleficent</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="narnia" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaNarnia()">X</button>
+            <img src="../imagens/Nárnia.jpg" alt="Nárnia">
+            <p id="tipo"><strong>Tipo:</strong> Fantasia, Aventura</p>
+            <p><strong>Lançamento:</strong> 30/05/2008</p>
+            <p><strong>Direção:</strong> Andrew Adamson</p>
+            <p><strong>Roteiro:</strong> Andrew Adamson, Christopher Markus</p>
+            <p><strong>Elenco:</strong> Ben Barnes, Georgie Henley, Skandar Keynes</p>
+            <p><strong>Título original</strong> The Chronicles of Narnia: Prince Caspian</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="reiLeao" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaReiLeao()">X</button>
+            <img src="../imagens/Rei-Leao.jpg" alt="O-Rei-Leão">
+            <p id="tipo"><strong>Tipo:</strong> Aventura, Animação, Família</p>
+            <p><strong>Lançamento:</strong> 18/07/2019</p>
+            <p><strong>Direção:</strong> Jon Favreau</p>
+            <p><strong>Roteiro:</strong> Jeff Nathanson, Jonathan Roberts</p>
+            <p><strong>Elenco:</strong> Ícaro Silva, Glauco Marques, Ivan Parente</p>
+            <p><strong>Título original</strong> The Lion King</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="frozen" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaFrozen()">X</button>
+            <img src="../imagens/Frozen_2013.png" alt="Frozen">
+            <p id="tipo"><strong>Tipo:</strong> Animação, Aventura, Musical</p>
+            <p><strong>Lançamento:</strong> 03/01/2014</p>
+            <p><strong>Direção:</strong> Chris Buck, Jennifer Lee</p>
+            <p><strong>Roteiro:</strong> Jennifer Lee, Hans Christian Andersen</p>
+            <p><strong>Elenco:</strong> Fábio Porchat, Kristen Bell, Idina Menzel</p>
+            <p><strong>Título original</strong> Frozen</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="tarzan" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaTarzan()">X</button>
+            <img src="../imagens/Tarzan.jpg" alt="Tarzan">
+            <p id="tipo"><strong>Tipo:</strong> Animação, Aventura, Drama, Família</p>
+            <p><strong>Lançamento:</strong> 02/07/1999</p>
+            <p><strong>Direção:</strong> Kevin Lima, Chris Buck</p>
+            <p><strong>Roteiro:</strong> Tab Murphy, Bob Tzudiker, Noni White, David Reynolds</p>
+            <p><strong>Elenco:</strong> Tony Goldwyn, Minnie Driver, Rosie O'Donnell</p>
+            <p><strong>Título original</strong> Tarzan</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="toyHistory" class="modelo">
+        <div id="modal-1" >
+            <button type="button" style="float: right;" onclick="escondaToyHistory()">X</button>
+            <img src="../imagens/Toy_Story_1995.jpg" alt="Toy-History">
+            <p id="tipo"><strong>Tipo:</strong> Animação, Comédia, Família</p>
+            <p><strong>Lançamento:</strong> 22/12/1995</p>
+            <p><strong>Direção:</strong> John Lasseter</p>
+            <p><strong>Roteiro:</strong> John Lasseter, Andrew Stanton</p>
+            <p><strong>Elenco:</strong> Tim Allen, Don Rickles, Jim Varney</p>
+            <p><strong>Título original</strong> Toy Story</p>
+            <p></p>
+        </div>
+    </div>
+
+    <footer>
+        <p id="linkedin"><a href="https://www.linkedin.com/in/joelson-luiz-906a32195/" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/Joelson0935?tab=repositories" target="_blank">GitHub</a></p>
+        <p><a href="https://wa.me/5522998643385" target="_blank">WhatsApp</a></p>
+        <E-mail><a href="mailto:Joelsonluiz2010@gmail.com" target="_blank">Joelsonluiz2010@gmail.com</a></E-mail>
+        <p>Copyright &copy; DisneyFilmes.com</p>
+    </footer>
+
+    <script>
+        function aparecaPiratas() {
+            $('#piratas-do-caribe').show();
+        }
+
+        function escondaPiratas() {
+            $('#piratas-do-caribe').hide();
+        }
+
+        function aparecaMulan() {
+            $('#mulan').show();
+        }
+
+        function escondaMulan() {
+            $('#mulan').hide();
+        }
+
+        function aparecaRaya() {
+            $('#raya').show();
+        }
+
+        function escondaRaya() {
+            $('#raya').hide();
+        }
+
+        function aparecaEraDoGelo() {
+            $('#eraDoGelo').show();
+        }
+
+        function escondaEraDoGelo() {
+            $('#eraDoGelo').hide();
+        }
+
+        function aparecaJohnCarter() {
+            $('#johnCarter').show();
+        }
+
+        function escondaJohnCarter() {
+            $('#johnCarter').hide();
+        }
+
+        function aparecaPrincipeDaPersia() {
+            $('#persia').show();
+        }
+
+        function escondaPrincipeDaPersia() {
+            $('#persia').hide();
+        }
+
+        function aparecaMalevola() {
+            $('#malevola').show();
+        }
+
+        function escondaMalevola() {
+            $('#malevola').hide();
+        }
+
+        function aparecaNarnia() {
+            $('#narnia').show();
+        }
+
+        function escondaNarnia() {
+            $('#narnia').hide();
+        }
+
+        function aparecaReiLeao() {
+            $('#reiLeao').show();
+        }
+
+        function escondaReiLeao() {
+            $('#reiLeao').hide();
+        }
+
+        function aparecaFrozen() {
+            $('#frozen').show();
+        }
+
+        function escondaFrozen() {
+            $('#frozen').hide();
+        }
+
+        function aparecaTarzan() {
+            $('#tarzan').show();
+        }
+
+        function escondaTarzan() {
+            $('#tarzan').hide();
+        }
+
+        function aparecaToyHistory() {
+            $('#toyHistory').show();
+        }
+
+        function escondaToyHistory() {
+            $('#toyHistory').hide();
+        }
+
+    </script>
+
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.bundle.min.js">
+</body>
+
+</html>
